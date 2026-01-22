@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementot</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: black;
+        }
+        a:active{
+            color: yellow;
+        }
+        .special:before{
+            content: '-->'
+        }
+        .special:after{
+            content: '<--';
+        }
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" class="special">click para entrar no youtube</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">click para entrar no instagram</a></li>
+    </ul>
+</body>
+</html>
